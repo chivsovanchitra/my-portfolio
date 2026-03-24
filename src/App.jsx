@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 
 export default function App() {
   return (
-    <div className="font-sans scroll-smooth">
+    <div className="font-sans">
       <Navbar />
       <Profile />
       <About />
