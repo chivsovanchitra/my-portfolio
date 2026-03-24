@@ -2,7 +2,7 @@ import { aboutMe } from "../config/data";
 
 export default function About() {
   return (
-    <section id="about" className="w-full px-4 sm:px-6 py-20 sm:py-24 h-[70vh]">
+    <section id="about" className="w-full px-4 sm:px-6 py-20 sm:py-24 h-screen lg:h-[70vh]">
       <div className="space-y-2 tracking-wide">
         <p className="text-center text-gray-500 text-sm sm:text-base">
           Get To Know More
