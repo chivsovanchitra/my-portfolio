@@ -7,7 +7,7 @@ export default function Profile() {
       className="h-[90vh] flex flex-col md:flex-row items-center justify-center gap-16 px-6 pt-24"
     >
       <img
-        src="assets/profile-pic.png"
+        src="assets/profile-pic.jpg"
         className="w-64 h-64 object-cover rounded-full shadow-lg border border-black"
       />
 
