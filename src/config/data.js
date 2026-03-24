@@ -15,12 +15,12 @@ export const aboutMe = {
   experience: {
     title: "Experience",
     image: "assets/experience.png",
-    desc: "2+ years Frontend",
+    desc: "1+ year of experience in web development",
   },
   education: {
     title: "Education",
     image: "assets/education.png",
-    desc: "Bachelor Degree",
+    desc: "Currently pursuing Year 2 of Bachelor Degree in Management Information System",
   },
 };
 

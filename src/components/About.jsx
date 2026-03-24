@@ -28,8 +28,8 @@ export default function About() {
                   src={image}
                   className="w-8 h-8 mb-1 group-hover:scale-110 transition"
                 />
-                <h3 className="font-semibold text-sm sm:text-base">{title}</h3>
-                <p className="text-gray-500 text-xs sm:text-sm">{desc}</p>
+                <h3 className="font-semibold text-base">{title}</h3>
+                <p className="text-gray-500 text-sm">{desc}</p>
               </div>
             </div>
           ))}
