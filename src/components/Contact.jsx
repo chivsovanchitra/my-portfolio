@@ -3,7 +3,7 @@ export default function Contact() {
     <section id="contact" className="py-24 text-center">
       <h1 className="text-4xl font-bold mb-6">Contact Me</h1>
 
-      <div className="flex justify-center gap-6">
+      <div className="flex justify-center gap-6 mt-10">
         <a
           href="mailto:example@gmail.com"
           className="px-6 py-3 border rounded-full hover:bg-black hover:text-white transition flex items-center gap-2"

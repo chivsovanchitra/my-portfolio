@@ -2,17 +2,16 @@ import { aboutMe } from "../config/data";
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="w-full px-4 sm:px-6 py-20 sm:py-24 h-[70vh]"
-    >
-      <p className="text-center text-gray-500 text-sm sm:text-base">
-        Get To Know More
-      </p>
+    <section id="about" className="w-full px-4 sm:px-6 py-20 sm:py-24 h-[70vh]">
+      <div className="space-y-2 tracking-wide">
+        <p className="text-center text-gray-500 text-sm sm:text-base">
+          Get To Know More
+        </p>
 
-      <h1 className="text-3xl sm:text-4xl text-center font-bold mb-10 sm:mb-12">
-        About Me
-      </h1>
+        <h1 className="text-3xl sm:text-4xl text-center font-bold mb-10 sm:mb-12">
+          About Me
+        </h1>
+      </div>
 
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 lg:justify-center lg:gap-16 items-center">
         <img

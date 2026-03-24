@@ -13,9 +13,7 @@ export default function Profile() {
 
       <div className="text-center md:text-left max-w-lg">
         <p className="text-gray-500 mb-2">Hi there, I'm</p>
-
         <h1 className="text-5xl font-bold leading-tight">{userInfo.name}</h1>
-
         <p className="text-xl text-gray-500 mt-2">{userInfo.title}</p>
 
         <div className="flex gap-4 mt-6 justify-center md:justify-start">

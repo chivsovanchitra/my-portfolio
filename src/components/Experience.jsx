@@ -3,8 +3,10 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Node JS"];
 export default function Experience() {
   return (
     <section id="experience" className="max-w-6xl mx-auto px-6 py-24">
-      <p className="text-center text-gray-500">Explore My</p>
-      <h1 className="text-4xl text-center font-bold mb-12">Experience</h1>
+      <div className="space-y-2 tracking-wide">
+        <p className="text-center text-gray-500">Explore My</p>
+        <h1 className="text-4xl text-center font-bold mb-12">Experience</h1>
+      </div>
 
       <div className="flex flex-wrap justify-center gap-4">
         {skills.map((skill) => (

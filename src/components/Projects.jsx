@@ -6,8 +6,10 @@ export default function Projects() {
       id="projects"
       className="max-w-6xl mx-auto px-6 py-24 min-h-screen"
     >
-      <p className="text-center text-gray-500">Browse My Recent</p>
-      <h1 className="text-4xl text-center font-bold mb-12">Projects</h1>
+      <div className="space-y-2 tracking-wide">
+        <p className="text-center text-gray-500">Browse My Recent</p>
+        <h1 className="text-4xl text-center font-bold mb-12">Projects</h1>
+      </div>
 
       <div className="grid md:grid-cols-3 gap-8">
         {projects.map((p) => (
