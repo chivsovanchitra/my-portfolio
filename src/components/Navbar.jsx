@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { userInfo } from "../config/data";
-import { menus } from "../config/appSettings";
+import { appName, menus } from "../config/appSettings";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -8,10 +7,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/70 border-b">
       <div className="max-w-5xl mx-auto flex justify-between items-center px-6 py-4">
-        
-        <div className="text-xl font-semibold tracking-tight">
-          {userInfo.fullName}
-        </div>
+        <div className="text-xl font-semibold tracking-wide">{appName}</div>
 
         {/* Desktop */}
         <ul className="hidden md:flex gap-8 text-sm font-medium">
@@ -28,10 +24,7 @@ export default function Navbar() {
         </ul>
 
         {/* Mobile */}
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden text-2xl"
-        >
+        <button onClick={() => setOpen(!open)} className="md:hidden text-2xl">
           ☰
         </button>
       </div>

@@ -1,3 +1,5 @@
+export const appName = "Portfolio";
+
 export const menus = [
   { label: "About", value: "about" },
   { label: "Skills", value: "skills" },
