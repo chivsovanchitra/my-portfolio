@@ -1,22 +1,36 @@
-const projects = [
-  { title: "Project One", img: "src/assets/project-1.png" },
-  { title: "Project Two", img: "src/assets/project-2.png" },
-];
+import { projects } from "../config/data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="min-h-screen p-10">
-      <h1 className="text-3xl text-center font-bold">Projects</h1>
+    <section
+      id="projects"
+      className="max-w-6xl mx-auto px-6 py-24 min-h-screen"
+    >
+      <p className="text-center text-gray-500">Browse My Recent</p>
+      <h1 className="text-4xl text-center font-bold mb-12">Projects</h1>
 
-      <div className="grid md:grid-cols-3 gap-6 mt-10">
+      <div className="grid md:grid-cols-3 gap-8">
         {projects.map((p) => (
-          <div key={p.title} className="border p-4 rounded-2xl">
-            <img src={p.img} className="rounded-xl" />
-            <h2 className="text-xl mt-2">{p.title}</h2>
+          <div
+            key={p.title}
+            className="group rounded-2xl overflow-hidden border hover:shadow-xl transition"
+          >
+            <img
+              src={p.img}
+              className="w-full group-hover:scale-105 transition"
+            />
 
-            <div className="flex gap-2 mt-2">
-              <button className="border px-3 py-1">Github</button>
-              <button className="border px-3 py-1">Live</button>
+            <div className="p-4">
+              <h2 className="text-lg font-semibold">{p.title}</h2>
+
+              <div className="flex gap-2 mt-3">
+                <button className="text-sm px-3 py-1 border rounded hover:bg-black hover:text-white transition">
+                  Github
+                </button>
+                <button className="text-sm px-3 py-1 border rounded hover:bg-black hover:text-white transition">
+                  Live
+                </button>
+              </div>
             </div>
           </div>
         ))}

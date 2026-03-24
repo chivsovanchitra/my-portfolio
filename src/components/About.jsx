@@ -1,26 +1,46 @@
+import { aboutMe } from "../config/data";
+
 export default function About() {
   return (
-    <section id="about" className="px-6 py-20">
-      <p className="text-center">Get To Know More</p>
-      <h1 className="text-3xl text-center font-bold mb-10">About Me</h1>
+    <section
+      id="about"
+      className="w-full px-4 sm:px-6 py-20 sm:py-24 h-[70vh]"
+    >
+      <p className="text-center text-gray-500 text-sm sm:text-base">
+        Get To Know More
+      </p>
 
-      <div className="flex flex-col md:flex-row gap-10 items-center">
-        <img src="src/assets/about-pic.png" className="w-64 rounded-2xl" />
+      <h1 className="text-3xl sm:text-4xl text-center font-bold mb-10 sm:mb-12">
+        About Me
+      </h1>
 
-        <div>
-          <div className="flex gap-4 mb-6 flex-wrap">
-            <div className="border p-4 rounded-2xl text-center">
-              <h3>Experience</h3>
-              <p>2+ years Frontend</p>
-            </div>
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 lg:justify-center lg:gap-16 items-center">
+        <img
+          src="src/assets/about-pic.png"
+          className="w-48 sm:w-64 md:w-72 lg:w-80 rounded-2xl shadow-lg object-cover"
+        />
 
-            <div className="border p-4 rounded-2xl text-center">
-              <h3>Education</h3>
-              <p>Bachelor Degree</p>
-            </div>
+        <div className="w-full max-w-xl text-center lg:text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
+            {Object.entries(aboutMe).map(([key, { title, image, desc }]) => (
+              <div
+                key={key}
+                className="p-5 rounded-2xl border shadow-sm hover:shadow-md transition text-center"
+              >
+                <img src={image} className="w-7 h-7 mx-auto mb-2" />
+                <h3 className="font-semibold text-sm sm:text-base">{title}</h3>
+                <p className="text-gray-500 text-xs sm:text-sm mt-1">{desc}</p>
+              </div>
+            ))}
           </div>
 
-          <p className="text-gray-600">Your description here...</p>
+          <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+            I am a passionate and self-driven software development student with
+            a strong interest in building modern web applications. I have
+            experience working with technologies such as React, Node.js, and
+            SQL, and I enjoy transforming ideas into clean, functional, and
+            user-friendly interfaces.
+          </p>
         </div>
       </div>
     </section>

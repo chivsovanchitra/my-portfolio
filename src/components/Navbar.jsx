@@ -1,44 +1,56 @@
 import { useState } from "react";
+import { userInfo } from "../config/data";
+import { menus } from "../config/appSettings";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
-      {/* Desktop */}
-      <nav className="hidden md:flex justify-around items-center h-[17vh]">
-        <div className="text-2xl">John Doe</div>
-        <ul className="flex gap-8 text-xl">
-          {["about", "experience", "projects", "contact"].map((item) => (
-            <li key={item}>
-              <a href={`#${item}`} className="hover:text-gray-500">
-                {item}
+    <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/70 border-b">
+      <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+        
+        <div className="text-xl font-semibold tracking-tight">
+          {userInfo.fullName}
+        </div>
+
+        {/* Desktop */}
+        <ul className="hidden md:flex gap-8 text-sm font-medium">
+          {menus.map((item) => (
+            <li key={item.value}>
+              <a
+                href={`#${item.value}`}
+                className="hover:text-black text-gray-600 transition"
+              >
+                {item.label}
               </a>
             </li>
           ))}
         </ul>
-      </nav>
 
-      {/* Mobile */}
-      <nav className="flex md:hidden justify-between p-4">
-        <div className="text-xl">John Doe</div>
+        {/* Mobile */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden text-2xl"
+        >
+          ☰
+        </button>
+      </div>
 
-        <div>
-          <button onClick={() => setOpen(!open)}>☰</button>
-
-          {open && (
-            <ul className="absolute right-4 bg-white shadow p-4">
-              {["about", "experience", "projects", "contact"].map((item) => (
-                <li key={item}>
-                  <a href={`#${item}`} onClick={() => setOpen(false)}>
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
+      {/* Mobile dropdown */}
+      {open && (
+        <div className="md:hidden px-6 pb-4 space-y-3">
+          {menus.map((item) => (
+            <a
+              key={item.value}
+              href={`#${item.value}`}
+              onClick={() => setOpen(false)}
+              className="block text-gray-700"
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
-      </nav>
-    </>
+      )}
+    </nav>
   );
 }

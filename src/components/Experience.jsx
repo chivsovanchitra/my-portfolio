@@ -2,14 +2,17 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Node JS"];
 
 export default function Experience() {
   return (
-    <section id="experience" className="px-6 py-20">
-      <h1 className="text-3xl text-center font-bold mb-10">Experience</h1>
+    <section id="experience" className="max-w-6xl mx-auto px-6 py-24">
+      <p className="text-center text-gray-500">Explore My</p>
+      <h1 className="text-4xl text-center font-bold mb-12">Experience</h1>
 
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-4">
         {skills.map((skill) => (
-          <div key={skill} className="border p-4 rounded-xl w-40 text-center">
-            <h3>{skill}</h3>
-            <p className="text-gray-500">Intermediate</p>
+          <div
+            key={skill}
+            className="px-6 py-3 rounded-full border text-sm font-medium hover:bg-black hover:text-white transition"
+          >
+            {skill}
           </div>
         ))}
       </div>
