@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/70 border-b">
-      <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <div className="max-w-5xl mx-auto flex justify-between items-center px-6 py-4">
         
         <div className="text-xl font-semibold tracking-tight">
           {userInfo.fullName}

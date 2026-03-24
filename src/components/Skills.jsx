@@ -1,11 +1,11 @@
-const skills = ["HTML", "CSS", "JavaScript", "React", "Node JS"];
+import { skills } from "../config/data";
 
-export default function Experience() {
+export default function Skills() {
   return (
-    <section id="experience" className="max-w-6xl mx-auto px-6 py-24">
+    <section id="skills" className="max-w-5xl mx-auto px-6 py-24">
       <div className="space-y-2 tracking-wide">
         <p className="text-center text-gray-500">Explore My</p>
-        <h1 className="text-4xl text-center font-bold mb-12">Experience</h1>
+        <h1 className="text-4xl text-center font-bold mb-12">Skills</h1>
       </div>
 
       <div className="flex flex-wrap justify-center gap-4">

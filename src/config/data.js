@@ -23,3 +23,18 @@ export const aboutMe = {
     desc: "Bachelor Degree",
   },
 };
+
+export const skills = [
+  "HTML/CSS",
+  "JavaScript",
+  "Python",
+  "React JS",
+  "Vue JS",
+  "PHP",
+  "Laravel",
+  "SQL",
+  "MySQL",
+  "Git/GitHub",
+  "Tailwind/Bootstrap/Material UI",
+  "Figma",
+];

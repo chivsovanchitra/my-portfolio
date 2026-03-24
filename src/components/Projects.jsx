@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="max-w-6xl mx-auto px-6 py-24 min-h-screen"
+      className="max-w-5xl mx-auto px-6 py-24 min-h-screen"
     >
       <div className="space-y-2 tracking-wide">
         <p className="text-center text-gray-500">Browse My Recent</p>
