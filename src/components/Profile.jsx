@@ -19,14 +19,14 @@ export default function Profile() {
         <div className="flex gap-4 mt-6 justify-center md:justify-start">
           <button
             onClick={() => window.open("/assets/resume.pdf")}
-            className="px-6 py-3 rounded-full border hover:bg-black hover:text-white transition"
+            className="px-6 py-3 rounded-full border hover:bg-black hover:text-white transition cursor-pointer"
           >
             Download CV
           </button>
 
           <button
             onClick={() => (window.location.href = "#contact")}
-            className="px-6 py-3 rounded-full bg-black text-white hover:opacity-80 transition"
+            className="px-6 py-3 rounded-full bg-black text-white hover:opacity-80 transition cursor-pointer"
           >
             Contact
           </button>

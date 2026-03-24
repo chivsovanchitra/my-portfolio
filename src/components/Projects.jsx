@@ -26,10 +26,10 @@ export default function Projects() {
               <h2 className="text-lg font-semibold">{p.title}</h2>
 
               <div className="flex gap-2 mt-3">
-                <button className="text-sm px-3 py-1 border rounded hover:bg-black hover:text-white transition">
+                <button className="text-sm px-3 py-1 border rounded-full hover:bg-black hover:text-white transition cursor-pointer">
                   Github
                 </button>
-                <button className="text-sm px-3 py-1 border rounded hover:bg-black hover:text-white transition">
+                <button className="text-sm px-3 py-1 border rounded-full hover:bg-black hover:text-white transition cursor-pointer">
                   Live
                 </button>
               </div>
