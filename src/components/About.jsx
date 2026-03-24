@@ -15,7 +15,7 @@ export default function About() {
 
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 lg:justify-center lg:gap-16 items-center">
         <img
-          src="src/assets/about-pic.png"
+          src="assets/about-pic.png"
           className="w-48 sm:w-64 md:w-72 lg:w-80 rounded-2xl shadow-lg object-cover"
         />
 

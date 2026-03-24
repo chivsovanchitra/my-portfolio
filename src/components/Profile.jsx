@@ -7,7 +7,7 @@ export default function Profile() {
       className="h-[90vh] flex flex-col md:flex-row items-center justify-center gap-16 px-6 pt-24"
     >
       <img
-        src="src/assets/profile-pic.png"
+        src="assets/profile-pic.png"
         className="w-64 h-64 object-cover rounded-full shadow-lg border border-black"
       />
 
@@ -35,12 +35,12 @@ export default function Profile() {
         {/* Socials */}
         <div className="flex gap-4 mt-6 justify-center md:justify-start">
           <img
-            src="src/assets/linkedin.png"
+            src="assets/linkedin.png"
             className="w-6 cursor-pointer hover:scale-110 transition"
             onClick={() => window.open("https://linkedin.com")}
           />
           <img
-            src="src/assets/github.png"
+            src="assets/github.png"
             className="w-6 cursor-pointer hover:scale-110 transition"
             onClick={() => window.open("https://github.com")}
           />
